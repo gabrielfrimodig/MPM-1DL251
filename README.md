@@ -18,7 +18,7 @@ Possible constrains are often time, money or the organization. \
 SE differs from other form of engineering in that every project  is mostly new, it is *invisible*, tha complexity implies lack of physical boundaries and the use of legacy systems.
 
 **Define the concept of process-based quality. Explain the advantages and disadvantages.** \
-![Process-based quality](images\processbased.png "Process-based quality")
+![Process-based quality](/images/processbased.png "Process-based quality")
 Instead of measuring the quality of the process, we measure the quality of the product. It's based on the idea that a good result means a good process. If the end product is good then we standardize that process. \
 The problem with this approach is that a bad process could (by luck) genereate a good result. And by this approach we would then standardize a bad process. It's otherwise easy to understand and does in mostly work.
 
@@ -37,28 +37,28 @@ The problem with this approach is that a bad process could (by luck) genereate a
 **Describe, sketch a working diagram and explain both, when and how, the 4 main software process activities are done on the following processes. Explain the advantages and disadvantages of each one:**
 
 * **Waterfall model** \
-![Waterfall model](images\waterfall.png "Waterfall model") \
+![Waterfall model](/images/waterfall.png "Waterfall model") \
 The *waterfall model* is an example of a plan-driven process. In principle, you must plan and schedule all of the process activities before starting work on them. The following phase should not start until the previous phase has finished. \
 The waterfall model should only be used when the requirements are well understood and unlikely to change readically during system development. \
 **Advantages** - Well suited to smaller projects with deliverable that are easy to define from the start. It can provide more predictable end result for budget, timeline and scope. \
 **Disadvantages** - The major problem is the infexible partitioning of the project into distinct stages. Commitments must be made at an early stage in the process, which makes it difficult to respond to changing costumer requirements. \
 The waterfall methodology focuses very little on the end user or client involved with the project.
 * **V-Model** \
-![V-model](images\vmodel.png "V-model") \
+![V-model](/images/vmodel.png "V-model") \
 The *V-model* is a verification and validation model used in a software development life cycle where each level of development life-cycle is verified before moving to the next level. It is a sequential execution of the process in which each phase is completed before the next phase can begin. \
 **Advantages** - It is simple and easy to use. Since the testing starts as soon as the project requirements are written, it increases the sucess rate of the product and possible saves a lot of time. It's easy to manage and each phase are well defined. \
 **Disadvantages** - Sequential processes are rigid and not suitable if the requirements are not consistent. The client can only see the final product and not the intermediate modules of product being deisnged, since software is developed during the implementation phase meaning no early prototypes of the software are being produced. Not suitable for complex project and are in general a inflexible model. 
 
     Suitable for smaller or medium size projects where the requirements are clearly defined and fixed.
 * **Incremental development** \
-![Incremental](images\incremental.png "Incremental") \
+![Incremental](/images/incremental.png "Incremental") \
 *Incremental development* is a process where requirements is divided into various builds. Cycles are divided up into smaller, more easily managed modules. A working version of software is produced during the first module, so you have working software early during the software life cycle. \
 **Advantages** – It quickly generate a working software module and is highly flexible (less costly to change scope and requirements). Easy to test and debug during a smaller iteration. Customer can respond to each built. \
 **Disadvantages** – Needs good planning and design. Needs a clear and complete definition of the whole system before it can be broken down and built incrementally. Total cost tends to be high.
 
     Used when requirements of the complete system are clearly defined and understood. At least major requirements. Else if we need a early market release.
 * **Reuse-based development** \
-![Reuse-based](images\reusebased.png "Reuse-based") \
+![Reuse-based](/images/reusebased.png "Reuse-based") \
 In which software is redesigned through creating a sequence of prototypes known as models. Every system is derived from the previous one with constant series of defined rules. The reuse model has 4 fundamental steps: to identify components of old system that are most suitable for reuse, to understand all system components, to modify old system components to achieve new requirements and to integrate all of modified parts into new system. \
 **Advantages** – It may reduce the total cost of software development with a very low risk factor. It  potentially saves a lot of time and got a high efficient. \
 **Disadvantages** – Compromises in requirements may lead to a system that does not fulfill requirements of user. And sometimes using old system component, that is not compatible with new version of component, this may lead to an impact on system evolution.
@@ -95,11 +95,11 @@ For example: *email-service*. \
 **Non-functional requirements** - each login request should be processed within 10 seconds. Emails should be sent with a latency of no greater than 12 hours.
 
 **Describe, sketch a working diagram of the spiral view of process, emphasising the actors responsible for each process and their main responsabilities.** \
-![Spiral](images\spiral.png "Spiral") \
+![Spiral](/images/spiral.png "Spiral") \
 We start in the middle and work in circles.
 
 **Define requirements elicitation, explain its use in the software engineering process and the role of all actors involved.** \
-![Requirements Elicitation](images\requirementselicitation.png "Requirements Elicitation") \
+![Requirements Elicitation](/images/requirementselicitation.png "Requirements Elicitation") \
 
 1. **Requirements discovery** – Interacting with the stakeholders.
 2. **Requirements classification and organization** – Takes the unstructured collection of requirements, groups related requirements, and organizes them into coherent clusters.
