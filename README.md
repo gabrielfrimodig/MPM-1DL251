@@ -176,7 +176,7 @@ Legacy systems are old systems that are still useful and are sometimes critical 
 Business value and System quality
 
 **Describe and sketch a diagram how the two metrics are used to inform the decision of scraping, keeping or refactoring legacy systems.** \
-![Business & System Quality](images\legacy.png "Business & System Quality") \
+![Business & System Quality](/images/legacy.png "Business & System Quality") \
 **Low quality, low business value**: Keeping these systems in operation will be expensive and the rate of the return to the business will be fairly small. These systems should be scrapped. \
 **Low quality, high business value**: These systems are making an important business contribution so they cannot be scrapped. However, their low quality means that it is expensive to maintain them. These systems should be reengineered to improve their quality. They may be replaced, if a suitable off-the-shelf system is available. \
 **High quality, low business value**: These are systems that don’t contribute much to the business but which may not be very expensive to maintain. It is not worth replacing these systems so normal system maintenance may be continued if expensive changes are not required and the system hardware remains in use. If expensive changes become necessary, the software should be scrapped. \
