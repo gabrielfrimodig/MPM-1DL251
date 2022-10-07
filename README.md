@@ -38,7 +38,7 @@ The problem with this approach is that a bad process could (by luck) genereate a
 
 * **Waterfall model** \
 ![Waterfall model](/images/waterfall.png "Waterfall model") \
-The *waterfall model* is an example of a plan-driven process. In principle, you must plan and schedule all of the process activities before starting work on them. The following phase should not start until the previous phase has finished. \
+Because of the cascade from one phase to another, this model is known as the *waterfall model*, which is an example of a plan-driven process. In principle, you must plan and schedule all of the process activities before starting work on them. The following phase should not start until the previous phase has finished. \
 The waterfall model should only be used when the requirements are well understood and unlikely to change readically during system development. \
 **Advantages** - Well suited to smaller projects with deliverable that are easy to define from the start. It can provide more predictable end result for budget, timeline and scope. \
 **Disadvantages** - The major problem is the infexible partitioning of the project into distinct stages. Commitments must be made at an early stage in the process, which makes it difficult to respond to changing costumer requirements. \
@@ -52,7 +52,14 @@ The *V-model* is a verification and validation model used in a software developm
     Suitable for smaller or medium size projects where the requirements are clearly defined and fixed.
 * **Incremental development** \
 ![Incremental](/images/incremental.png "Incremental") \
-*Incremental development* is a process where requirements is divided into various builds. Cycles are divided up into smaller, more easily managed modules. A working version of software is produced during the first module, so you have working software early during the software life cycle. \
+*Incremental development* is based on the idea of developing an initial implementa-
+tion, exposing this to user comment and evolving it through several versions until an
+adequate system has been developed. The process is divided into various builds. Cycles are divided up into smaller, more easily managed modules. A working version of software is produced during the first module, so you have working software early during the software life cycle. \
+It is better than a waterfall approach for most business, e-commerce, and
+personal systems. Incremental development reflects the way that we solve prob-
+lems. We rarely work out a complete problem solution in advance but move toward
+a solution in a series of steps, backtracking when we realize that we have made a
+mistake.\
 **Advantages** – It quickly generate a working software module and is highly flexible (less costly to change scope and requirements). Easy to test and debug during a smaller iteration. Customer can respond to each built. \
 **Disadvantages** – Needs good planning and design. Needs a clear and complete definition of the whole system before it can be broken down and built incrementally. Total cost tends to be high.
 
@@ -110,14 +117,27 @@ We start in the middle and work in circles.
 It is the process of writing down the user and system requirements in a requirements document. Which should be clear, unambiguous, easy to understand, complete and consistent. It should describe the both the functional and non-functional requirements so that the end user can understand it. Should not include details of the system architecture or design. It is and expanded version of the user requirements that are used by SE as the starting point for the system design.
 
 **Formulate a well structured user stories as a use case using the natural language and UML.** \
+TODO
 
 **Define requirements validation, explain its use in the software engineering process and the role of all actors involved.** \
+![Requirements validation](/images/validation.png "Requirements validation") \
+Requirements validation is the process of checking that requirements actually define the system that the customer really wants. It overlaps with analysis as it is concerned with finding problems with the requirements. This process is important as errors in the requirements can lead to a system that does not meet the customer’s needs. \
+During the requirements validation process, different types of checks should be carried out.
+
+1. *Validuty checks* - checks that the requirements are consistent with each other and with the system architecture. A user may think that a system is needed to perfrom certain functions, but analysis may identify addtional or different functions that are required.
+2. *Consistency checks* - Requirements in the document should not conflict. Meaning no contradictory constraints or different descriptions of the system functions.
+3. *Completeness checks* - The requirements document should include requirements that define all functions and the constraints intended by the system user.
+4. *Realsism checks* - Using knowledge of existing technology, the requirements should be checked to ensure that they can actually be implemented.
+5. *Verifiability* - Contracts between costumer and contractor should always be verifiable. In practice, write a set of tests that can demonstrate that the delivered system meet the specified requirements.
 
 **Define requirements verification, explain its use in the software engineering process and the role of all actors involved.** \
 
 **List the desired characteristics of system requirements. Explain how we can actually measure them.** \
+System requirements are more detailed descriptions of the software system's functions, services and operational constraints. The system requirements document should define exactly what is to be implemented. It may be part of the contract between the system buyer and the software developers.
 
 **Compare user stories and tasks in agile methodologies.** \
+User story is smallest unit of work in an agile framework. It is a short description of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. It should be written in the form of a sentence or two of plain English. \
+Tasks decide which specific steps needs to be completed and who is responsible for each of them.
 
 ## Lecture 4
 
@@ -196,14 +216,11 @@ Business value and System quality
 
 # Reading
 
-*Lecture 1:* 1.1, 1.2, 2.1, 2.2.3.\
-*Important sections:* 2.1.1, 2.1.2, 2.2.3\
+Software engineering (Ninth Edition) - Ian Sommerville
 
-*Lecture 2:* 2.2.1 4 10.3\
-*Important sections:* 2.2.1, 4-in, 4.1, 4.2, 4.3-in, 4.3.1, 4.5, 4.6, 4.7
-
-*Lecture 4:* 2.1.3, 2.2.2, 6, 16, 17, 18
-*Important sections:* 2.2.3, Reuse oriented, 2.2.2, 6, Intro, 6.3, 17.2, 18, Intro, 18.2, 18.3.2, 18.3.3,
-
-*Lecture 6:* 9 Software evolution, 25 Configuration management, 24 Quality Management
-*Important sections:* 9.3 Software maintenance intro, 9.4 Legacy system management, 25.3 System building, 24-intro, 24.1 Software quality, 24.4 Software measurement and metrics
+| **Lecture** | **Reading**            | **Important sections**                                                          |
+|-------------|------------------------|---------------------------------------------------------------------------------|
+|      1      | 1.1-1.2, 2.1, 2.2.3    | 2.1.1, 2.1.2, 2.2.3                                                             |
+|      2      | 2.2.1, 4, 10.3         | 2.2.1, 4-in, 4.1-4.3-in, 4.3.1, 4.5-4.7                                         |
+|      4      | 2.1.3, 2.2.2, 6, 16-18 | 2.2.3-Reuse oriented, 2.2.2, 6-Intro, 6.3, 17.2, 18-Intro, 18.2, 18.3.2-18.3.3 |
+|      6      | 9, 24-25               | 9.3-9.4, 25.3, 24-intro, 24.1, 24.4                                             |
