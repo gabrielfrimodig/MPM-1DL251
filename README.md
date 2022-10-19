@@ -39,7 +39,7 @@ The problem with this approach is that a bad process could (by luck) genereate a
 
 * **Waterfall model** \
 ![Waterfall model](/images/waterfall.png "Waterfall model") \
-Because of the cascade from one phase to another, this model is known as the *waterfall model*, which is an example of a plan-driven process. In principle, you must plan and schedule all of the process activities before starting work on them. The following phase should not start until the previous phase has finished. \
+Because of the cascade from one phase to another, this model is known as the *waterfall model*, which is an example of a plan-driven process. In principle, you must plan and schedule all of the process activities before starting work on them. The following activity should not start until the previous phase has finished. \
 The waterfall model should only be used when the requirements are well understood and unlikely to change readically during system development. \
 **Advantages** - Well suited to smaller projects with deliverable that are easy to define from the start. It can provide more predictable end result for budget, timeline and scope. \
 **Disadvantages** - The major problem is the infexible partitioning of the project into distinct stages. Commitments must be made at an early stage in the process, which makes it difficult to respond to changing costumer requirements. \
@@ -47,9 +47,10 @@ The waterfall methodology focuses very little on the end user or client involved
 
 * **V-Model** \
 ![V-model](/images/vmodel.png "V-model") \
-The *V-model* is a verification and validation model used in a software development life cycle where each level of development life-cycle is verified before moving to the next level. It is a sequential execution of the process in which each phase is completed before the next phase can begin. \
+The *V-model* is a process used in a software development life cycle where each level of development life-cycle is verified before moving to the next level. It is a sequential execution of the process in which each phase is completed before the next phase can begin. \
+During the left side of the V, the requirements are gathered and analyzed. The right side of the V is where the software is developed and tested. \
 Suitable for smaller or medium size projects where the requirements are clearly defined and fixed. \
-**Advantages** - It is simple and easy to use. Since the testing starts as soon as the project requirements are written, it increases the sucess rate of the product and possible saves a lot of time. It's easy to manage and each phase are well defined. \
+**Advantages** - Since the testing starts as soon as the project requirements are written, it increases the sucess rate of the product and possible saves a lot of time. It's easy to manage and each phase are well defined. \
 **Disadvantages** - Sequential processes are rigid and not suitable if the requirements are not consistent. The client can only see the final product and not the intermediate modules of product being deisnged, since software is developed during the implementation phase meaning no early prototypes of the software are being produced. Not suitable for complex project and are in general a inflexible model.
 
 * **Incremental development** \
@@ -97,18 +98,18 @@ System requirements are classified as functional and non-functional requirements
 
 ### **Define functional requirements**
 
-Functional requirements is a description of the service that the software must offer and how the system should behave in particular situations. It describes a software system or its component. Functional software requirements help you to capture the intended behavior of the system. \
+Functional requirements is a description of the service that the software must offer and how the system should behave in particular situations. Functional software requirements help you to capture the intended behavior of the system. \
 For example: “*The software system should be integrated with banking API*” \
 **Complete:** All desired functionality is covered. \
 **Consistent:** They do not contradict each other.
 
 ### **Define non-functional requirements. Compare functional requirements and non-functional requirements in terms of what they describe and how they are used**
 
-Non-functional requirements are constraints on the services or functions offered by the system. It includes timing constraints, different constraints on the development process and constraints imposed by standards. Its often applied to the system as a whole rather than individual system features or services. Non-functional arguments must always be measurable. Could be issues like security, scalability, performance etc. Constrains on the system. These are just as important as the functional requirements. Compare to functional: see question above.
+Non-functional requirements are constraints on the services or functions offered by the system. It includes timing constraints, different constraints on the development process and constraints imposed by standards. Its often applied to the system as a whole rather than individual system features or services. Non-functional arguments must always be measurable. These are just as important as the functional requirements. Compare to functional: see question above.
 
 Non-functional requirements can be divided into subcategories.
 
-![Non-functional Requirements](/images/non-func.png "Non-functional Requirements") \
+![Non-functional Requirements](/images/non-func.png "Non-functional Requirements")
 
 ### **Formulate functional and non-functional requirements from a brief description of a product**
 
@@ -118,15 +119,16 @@ For example: *email-service*. \
 
 ### **Describe, sketch a working diagram of the spiral view of process, emphasising the actors responsible for each process and their main responsabilities**
 
-Requirements engineering processes may include four different high-level activities. These focus on assessing if the system is useful to the business (feasibility study), discovering requirements (elicitation and analysis), converting these requirements into some standard form (specification), and checking that the requirements actually define the system that the customer wants (validation). \
-The activities are organized as an iterative process around a spiral, with the output being a system requirements document. The amount of time and effort devoted to each activity in each iteration depends on the stage of the overall process and the type of system being developed. Early in the process, most effort will be spent on understanding high-level business and non-functional requirements, and the user requirements for the system. Later in the process, in the outer rings of the spiral, more effort will be devoted to eliciting and understanding the detailed system requirements. This spiral model accommodates approaches to development where the requirements are developed to different levels of detail. The number of iterations around the spiral can vary so the spiral can be exited after some or all of the user requirements have been elicited. Agile development can be used instead of prototyping so that the requirements and the system implementation are developed together.
+Requirements engineering processes may include four different high-level activities. These focus on discovering requirements (elicitation and analysis), converting these requirements into some standard form (specification), and checking that the requirements actually define the system that the customer wants (validation). \
+The activities are organized as an iterative process around a spiral, with the output being a system requirements document. The amount of time and effort devoted to each activity in each iteration depends on the stage of the overall process and the type of system being developed. \
+*TODO*: Focus on describing elicitation and analysis, specification and validation.
 
-![Spiral](/images/spiral.png "Spiral")
+![Spiral](/images/spiral.png "Spiral") \
+(*The different intermediate stages are not neccessary to remeber*)
 
 ### **Define requirements elicitation, explain its use in the software engineering process and the role of all actors involved**
 
-The aims of the requirements elicitation process are to understand the work that stakeholders do and how they might use a new system to help support that work. During requirements elicitation, software engineers work with stakeholders to find out about the application domain, work activities, the services and system features that stakeholders want, the required performance of the system, hardware constraints, and so on. \
-Requirements elicitation is the process of gathering information about the required system and existing systems, and distilling the user and system requirements from this information. Source of information includes documentation, system stakeholders, system users and other systems.
+The aims of the requirements elicitation process are to understand the work that stakeholders do and how they might use a new system to help support that work. During requirements elicitation, software engineers work with stakeholders to find out about the application domain, work activities, the services and system features that stakeholders want, the required performance of the system, hardware constraints, and so on.
 
 ![Requirements Elicitation](/images/requirementselicitation.png "Requirements Elicitation")
 
@@ -141,35 +143,29 @@ It is the process of writing down the user and system requirements in a requirem
 
 System requirements should be written in natural language but other notations based on forms, graphical system models or mathematical system models can also be used.
 
-![Users of a requirements document](/images/users-of-requirements.png "Users of a requirements document")
+![Users of a requirements document](/images/users-of-requirements.png "Users of a requirements document") \
+(*Not needed to remember*)
 
 ### **Formulate a well structured user stories as a use case using the natural language and UML**
 
 Use cases is a fundamental feature of the unified modeling language. In their simplest form, a use case identifies the actors involved in an interaction and names the type of interaction. This is then supplemented by additional information describing the interaction with the system. The additional information may be a textual description or one or more graphical models such as UML sequence or state charts. \
 Use cases are documented using a high-level use case diagram. The set of use cases represents all of the possible interactions that will be described in the system requirements. Actors in the process, who may be human or other systems, are represented as stick figures.
 
-**Example**: *The system should be able to show a brown 5x5 board that outlines the playing field for both players from the moment that a gaming session is initialized until the moment that a gaming session has ended.*
+**Example**: *The system should be able to show a brown 5x5 board that outlines the playing field for both players from the moment that a gaming session is initialized until the moment that a gaming session has ended, so that the game can be played properly.*
 
 ![UML](/images/umlex.png "UML")
 
 ### **Define requirements validation, explain its use in the software engineering process and the role of all actors involved.**
 
-Validation is the process of evaluating software during or at the end of the development process to determine whether it satisfies specified requirements. \
+Validation is the process of evaluating software during or at the end of the development process to determine whether it satisfies the client. \
 It ask: *will the product satisfy the costumer needs? Are we building the right product? Is the product usable?*
 
 ![Requirements validation](/images/validation.png "Requirements validation") \
 Requirements validation is the process of checking that requirements actually define the system that the customer really wants. It overlaps with analysis as it is concerned with finding problems with the requirements. This process is important as errors in the requirements can lead to a system that does not meet the customer’s needs. \
-During the requirements validation process, different types of checks should be carried out. Validation may also involve checking processes, such as inspections and reviews, at each stage of the software process from user requirements definition to program development.
-
-1. **Validuty checks**: Checks that the requirements are consistent with each other and with the system architecture. A user may think that a system is needed to perfrom certain functions, but analysis may identify addtional or different functions that are required.
-2. **Consistency checks**: Requirements in the document should not conflict. Meaning no contradictory constraints or different descriptions of the system functions.
-3. **Completeness checks**: The requirements document should include requirements that define all functions and the constraints intended by the system user.
-4. **Realsism checks**: Using knowledge of existing technology, the requirements should be checked to ensure that they can actually be implemented.
-5. **Verifiability**: Contracts between costumer and contractor should always be verifiable. In practice, write a set of tests that can demonstrate that the delivered system meet the specified requirements.
 
 ### **Define requirements verification, explain its use in the software engineering process and the role of all actors involved**
 
-Verification is the process of evaluating software to determine whether the products of a given development phase satisfy the conditions imposed at the start of that phase. \
+Verification is the process of evaluating software to determine whether the products of a given development phase satisfy the requirements at the start of that phase. \
 It ask the question: *do we satisfy the requirements? Are we building the product right? Is the contract fulfilled?*
 
 ### **List the desired characteristics of system requirements. Explain how we can actually measure them**
@@ -192,14 +188,13 @@ On the other hand, tasks present incremental change that are being made to syste
 ### **Define software design**
 
 A software design is a description of the structure of the software to be implemented, the data models and structures used by the system, the interfaces between system components and, sometimes, the algorithms used. \
-It is the composition of a single program, decomposted into layers and modules and looks at interactiv patterns. \
+It is the composition of a single program, decomposted into layers and modules and looks at interactiv patterns.
 
 ### **Define system design. Compare software design and system design in terms of how the programs are composed**
 
-System design is the process of designing the elements of a system such as the architecture, modules and components, the different interfaces of those components and the data that goes through that system. This process overlaps significantly with the requirements development process. It involves establishing the overall architecture of the system, identifying the different system components and understanding the relationships between them.
+System design is the process of designing the elements of a system such as the architecture, modules and components, the different interfaces of those components and the data that goes through that system. This process overlaps significantly with the requirements development process.
 
-Software design is all about building a design plan that delves into the different elements that make up a system. It shows how they work together to fulfill the system requirements. It concentrates on the system’s implementation, often delving into considerable detail. Software design centers on the selection of algorithms and data structures, as well as the implementation details of every single component.
-
+Software design is all about building a design plan that delves into the different elements that make up a system. It shows how they work together to fulfill the system requirements. It concentrates on the system’s implementation, often delving into considerable detail.
 
 ### **Describe the model for design process. Explain the function of the following activities in the context of software specification: design inputs, design activities, design outputs**
 
@@ -225,7 +220,7 @@ The output of the design activities will result in system architecture and speci
 ### **Describe, sketch a working diagram and classify the architectural patterns as physical vs. logical. Compare the advantages and disadvantages between systems:**
 
 * **Client-server** (physical) \
-![Client-server](/images/client-server.png "Client-server") \
+![Client-server](/images/client-server.png "Client-server")
 
 |       |                        |
 |-------|------------------------|
@@ -234,7 +229,7 @@ The output of the design activities will result in system architecture and speci
 
 
 * **Master-slave** (physical) \
-![Master-slave](/images/master-slave.png "Master-slave") \
+![Master-slave](/images/master-slave.png "Master-slave")
 
 |           |                                                          |
 |-----------|----------------------------------------------------------|
@@ -242,7 +237,7 @@ The output of the design activities will result in system architecture and speci
 | **Issue** | Not so extensible / secure                               |
 
 * **Distributed component** (physical) \
-![Distributed component](/images/distributed.png "Distributed component") \
+![Distributed component](/images/distributed.png "Distributed component")
 
 |          |                                                                                                                                      |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------|
@@ -250,7 +245,7 @@ The output of the design activities will result in system architecture and speci
 | **Bad**  | Complex                                                                                                                              |
 
 * **Layered model** (logical) \
-![Layered Model](/images/layered.png "Layered Model") \
+![Layered Model](/images/layered.png "Layered Model")
 
 |           |                                                                                              |
 |-----------|----------------------------------------------------------------------------------------------|
@@ -261,7 +256,7 @@ The output of the design activities will result in system architecture and speci
 | **Bad**   | Performance: needs to bypass layers                                                          |
 
 * **Model-view-controller** (logical) \
-![Model View Controller](/images/model-view-controller.png "Model View Controller") \
+![Model View Controller](/images/model-view-controller.png "Model View Controller")
 
 |           |                                                                                                                                            |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -270,17 +265,18 @@ The output of the design activities will result in system architecture and speci
 
 ### **Describe the N-tier architectural model. Explain the differences between a thin and fat client version**
 
-The N-tier architecture is a client-server architecture in which the presentation tier, application tier, and data tier are each implemented as a separate layer. The N-tier architecture is a client-server architecture in which the presentation tier, application tier, and data tier are each implemented as a separate layer.
+The N-tier is a client-server model with (N-1) servers.
 
 A two-tier client–server architecture is the simplest form of client–server architecture. The system is implemented as a single logical server plus an indefinite number of clients that use that server.
 
 ![Thin- and fat-client architectural models](/images/thinfat.png "Thin- and fat-client architectural models") \
 
-**Thin-client model:** A thin-client model, where the presentation layer is implemented on the client and all other layers (data management, application processing, and database) are implemented on a server. The client software may be a specially written program on the client to handle presentation. More often, however, a web browser on the client computer is used for presentation of the data. \
+**Thin-client model:** A thin-client model, where fewer layer is implemented on the client and all other layers are implemented on a server. More often, however, a web browser on the client computer is used for presentation of the data. \
 The advantage of the thin-client model is that it is simple to manage the clients. This is a major issue if there are a large number of clients, as it may be difficult and expensive to install new software on all of them. If a web browser is used as the client, there is no need to install any software. The disadvantage of the thin-client approach, however is that it may place a heavy processing load on both the server and the network.
 
-**Fat-client model:** A fat-client model, where some or all of the application processing is carried out on the client. Data management and database functions are implemented on the server. \
+**Fat-client model:** A fat-client model, where most or all of the layers is carried out on the client. Data management and database functions are implemented on the server. \
 The fat-client model makes use of available processing power on the computer running the client software, and distributes some or all of the application processing and the presentation to the client. The server is essentially a transaction server that manages all database transactions. Data management is straightforward as there is no need to manage the interaction between the client and the application processing system. Of course, the problem with the fat-client model is that it requires additional system management to deploy and maintain the software on the client computer. An example of a situation in which a fat-client architecture is used is in a bank ATM system, which delivers cash and other banking services to users.
+
 ## Lecture 6
 
 ### **Define code reviews. Explain why they are an important inspection tool**
@@ -289,6 +285,8 @@ General definition: somebody other than the author comments on program code. \
 It’s important since reduction of defect rates, cheaper bug fixes, increase maintainability (clean code preemptively).
 
 ### **Describe and classify the following review processes based on how formal they are. Compare the advantages and disadvantages between processes:**
+
+*TODO add details*
 
 * **Pair programming** \
   **How**: Code review happens naturally, as the other pair member reads what is written. \
@@ -336,25 +334,6 @@ There are three advantages of software inspection over testing:
 
 However, inspections cannot replace software testing. Inspections are not good for discovering defects that arise because of unexpected interactions between different parts of a program, timing problems, or problems with system performance. Furthermore, especially in small companies or development groups, it can be difficult and expensive to put together a separate inspection team as all potential members of the team may also be software developers.
 
-### **Define the concept of legacy system**
-
-Legacy systems are old systems that are still useful and are sometimes critical to business operation. They may be implemented using outdated languages and technology or may use other systems that are expensive to maintain. Often their structure has been degraded by change and documentation is missing or out of date. Nevertheless, it may not be cost effective to replace these systems. They may only be used at certain times of the year or it may be too risky to replace them because the specification has been lost.
-
-### **Enumerate the two key metrics we use to decide if to scrap, keep or refactor legacy systems**
-
-Business value and System quality
-
-### **Describe and sketch a diagram how the two metrics are used to inform the decision of scraping, keeping or refactoring legacy systems.**
-
-![Business & System Quality](/images/legacy.png "Business & System Quality") \
-**Low quality, low business value**: Keeping these systems in operation will be expensive and the rate of the return to the business will be fairly small. These systems should be scrapped.
-
-**Low quality, high business value**: These systems are making an important business contribution so they cannot be scrapped. However, their low quality means that it is expensive to maintain them. These systems should be reengineered to improve their quality. They may be replaced, if a suitable off-the-shelf system is available.
-
-**High quality, low business value**: These are systems that don’t contribute much to the business but which may not be very expensive to maintain. It is not worth replacing these systems so normal system maintenance may be continued if expensive changes are not required and the system hardware remains in use. If expensive changes become necessary, the software should be scrapped.
-
-**High quality, high business value**: These system have to be kept in operation. However, their high quality means that you don’t have to invest in transformation or system replacement. Normal system maintenance should be continued.
-
 ## Lecture 9
 
 ### **Define cost model**
@@ -391,7 +370,7 @@ Stages are not linear. Teams can move back and forth between stages based on eve
 The team gets to know each other and make good impression. Good time to create shared expectations, guidelines. It is at this stage boundaries are formed.
   2. **Storming** \
   We learn about each other's motivation. Preliminary boundaries and expectations are challenged. During the brainstorming: ideas are shared, strangths and weakness become apparent and roles start to be determined. \
-  Learning how to use the constructive potential of conflict and compromise key to progress.
+  Learning how to use the constructive potential of conflict and compromise key to progress. Conflicts is neccessary to improve!
   3. **Norming** \
   Conflicts have been solved and teammates have proved flexible. Everyone knows its role and works on their part of the project. \
   Problem emerge if: Someone does not understand their role, the team expectation is unclear or the overall goal is unclear. \
