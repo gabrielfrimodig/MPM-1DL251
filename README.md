@@ -13,13 +13,13 @@ The topics of the exam will be:
 ### **Define software engineering, explain the engineering view on SE and what are the relevant constrains**
 
 Software Engineering is about *processes* to create software. Concerned with theories, methods and tools to create software. Possible constrains are often time, money or the organization. \
-SE differs from other form of engineering in that every project  is mostly new, it is *invisible*, tha complexity implies lack of physical boundaries and the use of legacy systems.
+SE differs from other form of engineering in that every project is mostly new, it is *invisible*, the complexity implies lack of physical boundaries and the use of legacy systems.
 
 ### **Define the concept of process-based quality. Explain the advantages and disadvantages**
 
-![Process-based quality](/images/processbased.png "Process-based quality")
-Instead of measuring the quality of the process, we measure the quality of the product. It's based on the idea that a good result means a good process. If the end product is good then we standardize that process. \
-The problem with this approach is that a bad process could (by luck) genereate a good result. And by this approach we would then standardize a bad process. It's otherwise easy to understand and does in work in many cases.
+![Process-based quality](/images/processbased.png "Process-based quality") \
+By using *process-based quality*, instead of measuring the quality of the process, we measure the quality of the product. It is based on the idea that a good result means a good process. If the end product is good then we should standardize that process. \
+The problem with this approach is that a bad process could (by luck) genereate a good result. And by this approach we would then standardize a bad process. It is otherwise easy to understand and does in work in most cases.
 
 ### **List the 4 metrics used to measure the quality of a product, explain how we can actually measure them using a process**
 
@@ -40,9 +40,9 @@ The problem with this approach is that a bad process could (by luck) genereate a
 * **Waterfall model** \
 ![Waterfall model](/images/waterfall.png "Waterfall model") \
 Because of the cascade from one phase to another, this model is known as the *waterfall model*, which is an example of a plan-driven process. In principle, you must plan and schedule all of the process activities before starting work on them. The following activity should not start until the previous phase has finished. \
-The waterfall model should only be used when the requirements are well understood and unlikely to change readically during system development. \
+The waterfall model should only be used when the requirements are well understood and unlikely to change radically during system development. \
 **Advantages** - Well suited to smaller projects with deliverable that are easy to define from the start. It can provide more predictable end result for budget, timeline and scope. \
-**Disadvantages** - The major problem is the infexible partitioning of the project into distinct stages. Commitments must be made at an early stage in the process, which makes it difficult to respond to changing costumer requirements. \
+**Disadvantages** - The major problem is the infexible partitioning of the project into distinct stages. Commitments must be made at an early stage in the process, which makes it difficult to respond to if the costumer changes the requirements. \
 The waterfall methodology focuses very little on the end user or client involved with the project.
 
 * **V-Model** \
@@ -55,26 +55,17 @@ Suitable for smaller or medium size projects where the requirements are clearly 
 
 * **Incremental development** \
 ![Incremental](/images/incremental.png "Incremental") \
-*Incremental development* is based on the idea of developing an initial implementation, exposing this to user comment and evolving it through several versions until an
-adequate system has been developed. The process is divided into various builds. Cycles are divided up into smaller, more easily managed modules. A working version of software is produced during the first module, so you have working software early during the software life cycle. \
+*Incremental development* is based on the idea of developing an initial implementation, exposing this to user comments and evolving it through several versions until an adequate system has been developed. The process is divided into various builds. Cycles are divided up into smaller, more easily managed modules. A working version of software is produced during the first module, so you have working software early during the software life cycle. \
 It is better than a waterfall approach for most business, e-commerce, and personal systems. Incremental development reflects the way that we solve problems. We rarely work out a complete problem solution in advance but move toward a solution in a series of steps, backtracking when we realize that we have made a mistake. \
-Used when requirements of the complete system are clearly defined and understood. At least major requirements. Else if we need a early market release. \
+Used when requirements of the complete system are clearly defined and understood. At least the major requirements. Or if we need an early market release. \
 **Advantages** – It quickly generate a working software module and is highly flexible (less costly to change scope and requirements). Easy to test and debug during a smaller iteration. Customer can respond to each built. \
-**Disadvantages** – Needs good planning and design. Needs a clear and complete definition of the whole system before it can be broken down and built incrementally. Total cost tends to be high. \
-From a management perspective, the incremental approach has two problems:
-  1. The process is not visible. Managers need regular deliverables to measure
-progress. If systems are developed quickly, it is not cost-effective to produce
-documents that reflect every version of the system.
-  1. System structure tends to degrade as new increments are added. Unless time and
-money is spent on refactoring to improve the software, regular change tends to
-corrupt its structure. Incorporating further software changes becomes increas-
-ingly difficult and costly.
+**Disadvantages** – Needs good planning and design. Needs a clear and complete definition of the whole system before it can be broken down and built incrementally. Total cost tends to be high.
 
 * **Reuse-based development** \
 ![Reuse-based](/images/reusebased.png "Reuse-based") \
 In the majority of software projects, there is some software reuse. Often times the  software is redesigned through creating a sequence of prototypes known as models. Every system is derived from the previous one with constant series of defined rules. The reuse model has 4 fundamental steps: to identify components of old system that are most suitable for reuse, to understand all system components, to modify old system components to achieve new requirements and to integrate all of modified parts into new system. \
 **Advantages** – It may reduce the total cost of software development with a very low risk factor. It  potentially saves a lot of time and got a high efficient. It usually also leads to faster delivery of the software. \
-**Disadvantages** – Compromises in requirements may lead to a system that does not fulfill requirements of user. And sometimes using old system component, that is not compatible with new version of component, this may lead to an impact on system evolution.
+**Disadvantages** – Compromises in requirements may lead to a system that does not fulfill requirements of user. And sometimes using old system component, that is not compatible with new version of component, may lead to an impact on system evolution.
 
 ### **Define user requirements**
 
@@ -94,18 +85,20 @@ System requirements describe what the software must do.
 
 The readers of the user requirements are not usually concerned with how the system will be implemented and the readers of the system requirements need to know more precisely what the system will do.
 
-System requirements are classified as functional and non-functional requirements.
+System requirements are classified as *functional* and *non-functional* requirements.
 
 ### **Define functional requirements**
 
 Functional requirements is a description of the service that the software must offer and how the system should behave in particular situations. Functional software requirements help you to capture the intended behavior of the system. \
 For example: “*The software system should be integrated with banking API*” \
-**Complete:** All desired functionality is covered. \
-**Consistent:** They do not contradict each other.
+The functional requirements should be both *complete* and *consistent*.
+
+* **Complete:** All desired functionality is covered.
+* **Consistent:** They do not contradict each other.
 
 ### **Define non-functional requirements. Compare functional requirements and non-functional requirements in terms of what they describe and how they are used**
 
-Non-functional requirements are constraints on the services or functions offered by the system. It includes timing constraints, different constraints on the development process and constraints imposed by standards. Its often applied to the system as a whole rather than individual system features or services. Non-functional arguments must always be measurable. These are just as important as the functional requirements. Compare to functional: see question above.
+Non-functional requirements are constraints on the services or functions offered by the system. It includes timing constraints, different constraints on the development process and constraints imposed by standards. Its often applied to the system as a whole rather than individual system features or services. Non-functional arguments must always be measurable. These are just as important as the functional requirements. Compare to functional requirements: see question above.
 
 Non-functional requirements can be divided into subcategories.
 
@@ -121,7 +114,7 @@ For example: *email-service*. \
 
 Requirements engineering processes may include four different high-level activities. These focus on discovering requirements (elicitation and analysis), converting these requirements into some standard form (specification), and checking that the requirements actually define the system that the customer wants (validation). \
 The activities are organized as an iterative process around a spiral, with the output being a system requirements document. The amount of time and effort devoted to each activity in each iteration depends on the stage of the overall process and the type of system being developed. \
-*TODO*: Focus on describing elicitation and analysis, specification and validation.
+Requirements elication and analysis is the process of discovering the requirements for a system. The requirements are analyzed to determine their feasibility and to identify any conflicts. During requirements elication and requirements validation the customer is highly involved. During requirements specification and requirements analysis the developers are involved.
 
 ![Spiral](/images/spiral.png "Spiral") \
 (*The different intermediate stages are not neccessary to remeber*)
@@ -132,14 +125,14 @@ The aims of the requirements elicitation process are to understand the work that
 
 ![Requirements Elicitation](/images/requirementselicitation.png "Requirements Elicitation")
 
-1. **Requirements discovery**: This is the process of interacting with stakeholders of the system to discover their requirements. Domain requirements from stakeholders and documentation are also discovered during this activity.
-2. **Requirements classification and organization**: Takes the unstructured collection of requirements, groups related requirements, and organizes them into coherent clusters. The most common way of grouping requirements is to use a model of the system architecture to identify sub-systems and to associate requirements with each sub-system.
-3. **Requirements prioritization and negotiation**: When we have multiple stakeholders involved there sure will be conflicts. This activity is concerned with prioritizing requirements and finding and resolving requirements conflicts through negotiation.
-4. **Requirements specification**: The requirements (formal and informal) are documented and input into the next round of the spiral.
+1. **Requirements discovery** - This is the process of interacting with stakeholders of the system to discover their requirements. Domain requirements from stakeholders and documentation are also discovered during this activity.
+2. **Requirements classification and organization** - Takes the unstructured collection of requirements, groups related requirements, and organizes them into coherent clusters. The most common way of grouping requirements is to use a model of the system architecture to identify sub-systems and to associate requirements with each sub-system.
+3. **Requirements prioritization and negotiation** - When we have multiple stakeholders involved there sure will be conflicts. This activity is concerned with prioritizing requirements and finding and resolving requirements conflicts through negotiation.
+4. **Requirements specification** - The requirements (formal and informal) are documented and input into the next round of the spiral.
 
 ### **Define requirements specification, explain its use in the software engineering process and the role of all actors involved**
 
-It is the process of writing down the user and system requirements in a requirements document. The requirements document is an official statemnt of what the sytem developers should implement. It includes both user requirements for a system and a detailed specification of the system requirements. Which should be clear, unambiguous, easy to understand, complete and consistent. It should describe the both the functional and non-functional requirements so that the end user can understand it. Should not include details of the system architecture or design. It is and expanded version of the user requirements that are used by SE as the starting point for the system design.
+It is the process of writing down the user and system requirements in a requirements document. The requirements document is an official statemnt of what the sytem developers should implement. It includes both user requirements for a system and a detailed specification of the system requirements. Which should be clear, unambiguous, easy to understand, complete and consistent. It should describe the both the functional and non-functional requirements so that the end user can understand it. Should not include details of the system architecture or design. It is an expanded version of the user requirements that are used by SE as the starting point for the system design.
 
 System requirements should be written in natural language but other notations based on forms, graphical system models or mathematical system models can also be used.
 
@@ -161,7 +154,7 @@ Validation is the process of evaluating software during or at the end of the dev
 It ask: *will the product satisfy the costumer needs? Are we building the right product? Is the product usable?*
 
 ![Requirements validation](/images/validation.png "Requirements validation") \
-Requirements validation is the process of checking that requirements actually define the system that the customer really wants. It overlaps with analysis as it is concerned with finding problems with the requirements. This process is important as errors in the requirements can lead to a system that does not meet the customer’s needs. \
+Requirements validation is the process of checking that requirements actually define the system that the customer really wants. It overlaps with analysis as it is concerned with finding problems with the requirements. This process is important as errors in the requirements can lead to a system that does not meet the customer’s needs.
 
 ### **Define requirements verification, explain its use in the software engineering process and the role of all actors involved**
 
@@ -176,8 +169,9 @@ Desired characteristics of system requirements: completing the requirements, con
 
 ### **Compare user stories and tasks in agile methodologies**
 
-User story is smallest unit of work in an agile framework. It is a short description of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. It should be written in the form of a sentence or two of plain English. \
-Tasks decide which specific steps needs to be completed and who is responsible for each of them.
+User story is smallest unit of work in an agile framework. It is a short description of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. It should be written in the form of a sentence or two in natural language.
+
+Tasks decide which specific steps needs to be completed and who is responsible for each of them. It is a small unit of work that can be completed in a short period of time.
 
 User stories are presentation of the user requirement and is written as: **user role** needs to **do something** for **a reason**. It can be presented as UML diagrams.
 
@@ -222,32 +216,33 @@ The output of the design activities will result in system architecture and speci
 * **Client-server** (physical) \
 ![Client-server](/images/client-server.png "Client-server")
 
-|       |                        |
-|-------|------------------------|
-| **Good:**  | Easy to extend, secure |
-| **Issue:** | Bottleneck: network    |
-
+| Quality   | Feature                |
+|-----------|------------------------|
+| **Good**  | Easy to extend, secure |
+| **Issue** | Bottleneck: network    |
 
 * **Master-slave** (physical) \
 ![Master-slave](/images/master-slave.png "Master-slave")
 
-|           |                                                          |
-|-----------|----------------------------------------------------------|
-| **Good**  | Dedicated processes (slave), Great for real-time systems |
-| **Issue** | Not so extensible / secure                               |
+| Quality   | Feature                     |
+|-----------|-----------------------------|
+| **Good**  | Dedicated processes (slave) |
+| **Good**  | Great for real-time systems |
+| **Issue** | Not so extensible / secure  |
 
 * **Distributed component** (physical) \
 ![Distributed component](/images/distributed.png "Distributed component")
 
-|          |                                                                                                                                      |
-|----------|--------------------------------------------------------------------------------------------------------------------------------------|
-| **Good** | Allows system designer to delay decisions on when/how services are provided, Flexible / Scalable / Extensible / Auto-reconfiguration |
-| **Bad**  | Complex                                                                                                                              |
+| Quality  | Feature                                                                     |
+|----------|-----------------------------------------------------------------------------|
+| **Good** | Allows system designer to delay decisions on when/how services are provided |
+| **Good** | Flexible / Scalable / Extensible / Auto-reconfiguration                     |
+| **Bad**  | Complex                                                                     |
 
 * **Layered model** (logical) \
 ![Layered Model](/images/layered.png "Layered Model")
 
-|           |                                                                                              |
+| Quality   | Feature                                                                                      |
 |-----------|----------------------------------------------------------------------------------------------|
 | **Good**  | Used to model interacting subsystems                                                         |
 | **Good**  | Organizes system into set of layers: each layer provides only a set of services              |
@@ -258,7 +253,7 @@ The output of the design activities will result in system architecture and speci
 * **Model-view-controller** (logical) \
 ![Model View Controller](/images/model-view-controller.png "Model View Controller")
 
-|           |                                                                                                                                            |
+| Quality   | Feature                                                                                                                                    |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | **Good**  | Separates presentation/interaction/data: data can change independently of its representation, allows presenting same data in multiple ways |
 | **Issue** | Too simple: might involve extra coding, requires to adapt the logical architecture                                                         |
@@ -269,7 +264,7 @@ The N-tier is a client-server model with (N-1) servers.
 
 A two-tier client–server architecture is the simplest form of client–server architecture. The system is implemented as a single logical server plus an indefinite number of clients that use that server.
 
-![Thin- and fat-client architectural models](/images/thinfat.png "Thin- and fat-client architectural models") \
+![Thin- and fat-client architectural models](/images/thinfat.png "Thin- and fat-client architectural models")
 
 **Thin-client model:** A thin-client model, where fewer layer is implemented on the client and all other layers are implemented on a server. More often, however, a web browser on the client computer is used for presentation of the data. \
 The advantage of the thin-client model is that it is simple to manage the clients. This is a major issue if there are a large number of clients, as it may be difficult and expensive to install new software on all of them. If a web browser is used as the client, there is no need to install any software. The disadvantage of the thin-client approach, however is that it may place a heavy processing load on both the server and the network.
@@ -286,26 +281,24 @@ It’s important since reduction of defect rates, cheaper bug fixes, increase ma
 
 ### **Describe and classify the following review processes based on how formal they are. Compare the advantages and disadvantages between processes:**
 
-*TODO add details*
-
 * **Pair programming** \
-  **How**: Code review happens naturally, as the other pair member reads what is written. \
+  Pair programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed in. The two programmers switch roles frequently. \
   **Advantages**: Everything is read by 2 people. \
   **Disadvantages**: No benefit of distance, expansive.
 * **Over-the-shoulder** \
-  **How**: One programmer presents their work to a reviewer. The programmer is at the keyboard and walks the reviewer through the code.\
+  Over-the-shoulder is a code review technique in which a reviewer stands behind a developer and watches the developer type code. The reviewer can ask questions and make suggestions, but the developer is in control of the keyboard. \
   **Advantages**: Light-weight, can be used selectively, explanations are readily available. \
   **Disadvantages**: Little time for reflection, easy to over-explain, coverage not guaranteed.
 * **Peer review** \
-  **How**: The reviewer inspects a chunk of source code of the programmer, and comments on it. \
+  The reviewer inspects a chunk of source code of the programmer, and comments on it. \
   **Advantages**: Gives time for reflection, can be on demand, highlights code documentation issues. \
   **Disadvantages**: Can be seen as adversarial.
 * **Pre-checking** \
-  **How**: Every check-in is inspected by the owner of the module before being accepted. Checked with an expert. \
+  Every check-in is inspected by the owner of the module before being accepted. Checked with an expert. \
   **Advantages**: Everything is inspected, check-in message gives context, knowledgeable reviewer, frequent reviews. \
   **Disadvantages**: Time consumption, legacy, tools needed.
 * **Formal meeting** \
-  **How**: Several reviewers and programmers sit together for a meeting to discuss previously inspected code. \
+  Several reviewers and programmers sit together for a meeting to discuss previously inspected code. \
   **Advantages**: Many eyes on the code, can handle large change sets, observer friendly. \
   **Disadvantages**: Schedule meetings is hard/expensive, group dynamics and ego concerns.
 
@@ -317,7 +310,7 @@ Inspections mostly focus on the source code of a system but any readable represe
 
 The goals of inspections are: finding errors, checking adherence to standards, readability, collecting data about common errors.
 
-|          |                                                             |
+| Quality  | Feature                                                     |
 |----------|-------------------------------------------------------------|
 | **Good** | Apply to all documents: no program needed                   |
 | **Good** | Quality perspective from the start                          |
@@ -330,7 +323,7 @@ There are three advantages of software inspection over testing:
 2. Incomplete versions of a system can be inspected without additional costs. If a program is incomplete, then you need to develop specialized test harnesses to test the parts that are available. This obviously adds to the system development costs.
 3. As well as searching for program defects, an inspection can also consider broader quality attributes of a program, such as compliance with standards, portability, and maintainability. You can look for inefficiencies, inappropriate algorithms, and poor programming style that could make the system difficult to maintain and update.
 
-![Inspection](/images/inspection.png "Inspection") \
+![Inspection](/images/inspection.png "Inspection")
 
 However, inspections cannot replace software testing. Inspections are not good for discovering defects that arise because of unexpected interactions between different parts of a program, timing problems, or problems with system performance. Furthermore, especially in small companies or development groups, it can be difficult and expensive to put together a separate inspection team as all potential members of the team may also be software developers.
 
@@ -348,7 +341,7 @@ Describes the cost of a software system in terms of the resources required to bu
   Outcome determined by: requirements, available people, budget, risks, eventual ownership.
   
 * **Plan-based model** \
-We implement as much as the time allows. **Requirements** are agreed and **we can influence** them. \
+We implement as much as the time allows. Requirements are agreed and we can influence them. \
 Cost is mostly influenced by: salary costs, requirements satisfaction. Possible overhead: facilities, recruitment, support staff, computers, network, etc.
 
 * **Algorithmic cost models** \
